@@ -57,10 +57,6 @@ builder.Services
     .AddHealthChecks()
     .AddDbContextCheck<NovaWalletDbContext>("postgres");
 
-    builder.Services
-    .AddHealthChecks()
-    .AddDbContextCheck<NovaWalletDbContext>("postgres");
-
 // ADD THIS BELOW THE HEALTH CHECK
 builder.Services.AddRateLimiter(options =>
 {
